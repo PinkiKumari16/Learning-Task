@@ -7,7 +7,7 @@ body.appendChild(div);
 let bimage = document.querySelector('.bimage');
 let url1 = "https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/codingbg.png"
 // bimage.style.backgroundImage = `url(./white.png)`;
-bimage.style.backgroundColor = 'skyblue';
+bimage.style.backgroundImage = `url(${url1})`;
 bimage.style.backgroundSize = 'cover';
 bimage.style.height = '100vh';
 bimage.style.padding = '30px';
