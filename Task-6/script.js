@@ -4,18 +4,16 @@ let happyUrl = "https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/655
 
 
 let div = document.createElement('div');
-div.style.height = '5em';
-div.style.width = '20vw';
-div.style.backgroundImage = `url(${happyUrl})`;
-div.style.backgroundSize = 'contain';
-div.style.margin = '10px';
-div.style.backgroundRepeat = 'no-repeat';
-
 document.body.prepend(div);
 
+let emojiImage = document.createElement('img');
+emojiImage.src = `${happyUrl}`;
+emojiImage.setAttribute('height','400px')
+div.appendChild(emojiImage)
+
 let btn = document.getElementById('changeBtn');
-btn.style.padding = '0.5em';
-btn.style.fontSize = '1em'
+btn.style.padding = '1em';
+btn.style.fontSize = '1.5em'
 btn.style.fontWeight = 'bold';
 btn.style.backgroundColor = "#0000ff";
 btn.style.color = '#ffffff';
@@ -24,11 +22,11 @@ btn.style.color = '#ffffff';
 let emogiChange = () =>{
     happy = !happy;
     if (!happy){
-        div.style.backgroundImage = `url(${UnHappyUrl})`;
+        emojiImage.src = `${UnHappyUrl}`
         btn.innerText = 'Happy';
     }
     else{
-        div.style.backgroundImage = `url(${happyUrl})`;
+        emojiImage.src = `${happyUrl}`;
         btn.innerText = 'Un-Happy';
     }
 }
