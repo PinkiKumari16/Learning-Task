@@ -18,7 +18,9 @@
    height: 100vh;
 }
 
-
+h1{
+   color: #fa3333;
+}
 .traffic-light {
    color: #1f1d41;
    font-family: "Roboto";
