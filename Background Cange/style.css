@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.navbar{
+    height: 8vh;
+    background-color: #f89c9c;
+    display: flex;
+    justify-content: space-around;
+    line-height: 8vh;
+    color: rgb(120, 120, 219);
+    font-size: 1.5em;
+    
+}
+.links{
+    display: flex;
+    gap: 2.5em;
+}
+
+.dashbord{
+    height: 20vh;
+    width: 30%;
+    text-align: center;
+    margin: 15% 34%;
+}
+.colorBord{
+    background-color: #0a0a0a;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+}
+span{
+    color: #4949f8;
+}
+.btn{
+    margin-top: 3em;
+    padding: 10px;
+    width: 8vw;
+    border-radius: 10px;
+    border-width: 3px;
+}
