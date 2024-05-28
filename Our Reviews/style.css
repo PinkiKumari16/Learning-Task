@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.box{
+    height: 60vh;
+    display: flex;
+    /* background-color: pink; */
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10em;
+    gap: 2em;
+}
+.reviewer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    height: 55vh;
+    width: 35vw;
+    text-align: center;
+    background-color: #f2f8f2;
+    padding: 10px;
+    border: 3px solid rgb(172, 168, 168);
+}
+
+.image-box{
+    border-radius: 50%;
+    display: flex;
+    background-color: #7678ec;
+    height: 18vh;
+    width: 9vw;
+    margin: 4% 0 3% 37%;
+    
+    
+}
+img{
+    display: flex;
+    border-radius: 50%;
+    height: 18vh;
+    width: 8.5vw;
+    object-fit: cover;
+}
+.qoute{
+    background-color: #675df3;
+    height: 4vh;
+    width: 2vw;
+    padding: 1px;
+    border-radius: 50%;
+    position: fixed;
+    margin: 2% 0 0 13%;
+    color: #ffff;
+    font-size: 1.7em;
+
+}
+
+.contant{
+    padding: 7px;
+}
+.profession{
+    color: #50cea4;
+}
+.btn{
+    padding: 10px;
+    width: 22%;
+    margin: 2% 0 0 39%;
+    border-radius: 7px;
+}
+pre{
+    color: #50cea4;
+}
+pre:hover{
+    cursor: pointer;
+}
+.btn{
+    border: 3px solid blue;
+    color: #50cea4;
+    font-weight: bolder;
+}
