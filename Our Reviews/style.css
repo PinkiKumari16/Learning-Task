@@ -64,6 +64,10 @@ img{
     width: 22%;
     margin: 2% 0 0 39%;
     border-radius: 7px;
+    border: 3px solid blue;
+    color: #50cea4;
+    font-weight: bolder;
+    
 }
 pre{
     color: #50cea4;
@@ -71,8 +75,14 @@ pre{
 pre:hover{
     cursor: pointer;
 }
-.btn{
-    border: 3px solid blue;
-    color: #50cea4;
-    font-weight: bolder;
+.arrow{
+    height: 3vh;
+    display: flex;
+    justify-content: center;
+}
+.arro{
+    width: 2em;
+    font-size: 1.8em;
+    border: none;
+    background-color: transparent;
 }

@@ -1,0 +1,22 @@
+[
+    {
+        "image" : "./pinki.jpeg" ,
+        "name" : "Pinki",
+        "professtion" : "FRONT END DEVELOPER",
+        "content" : "I'am baby meggings health goth +1, Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humlebrag pickled coloring book salvia hoodle, cold-pressed four doliar toast everyday carry."
+    },
+    {
+        "image" : "./pinki.jpeg" ,
+        "name" : "Rinki",
+        "professtion" : "FRONT END DEVELOPER",
+        "content" : "I'am baby meggings health goth +1, Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humlebrag pickled coloring book salvia hoodle, cold-pressed four doliar toast everyday carry."
+    },
+    {
+        "image" : "./pinki.jpeg" ,
+        "name" : "Kiran",
+        "professtion" : "FRONT END DEVELOPER",
+        "content" : "I'am baby meggings health goth +1, Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humlebrag pickled coloring book salvia hoodle, cold-pressed four doliar toast everyday carry."
+    }
+] 
+
+export default;
