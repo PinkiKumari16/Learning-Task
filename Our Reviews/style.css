@@ -5,7 +5,6 @@
 .box{
     height: 60vh;
     display: flex;
-    /* background-color: pink; */
     align-items: center;
     flex-direction: column;
     margin-top: 10em;
@@ -20,7 +19,8 @@
     text-align: center;
     background-color: #f2f8f2;
     padding: 10px;
-    border: 3px solid rgb(172, 168, 168);
+    /* border: 3px solid rgb(172, 168, 168); */
+    box-shadow: #959998 2px 2px 12px;
 }
 
 .image-box{
@@ -38,7 +38,7 @@ img{
     border-radius: 50%;
     height: 18vh;
     width: 8.5vw;
-    object-fit: cover;
+    object-fit: fill;
 }
 .qoute{
     background-color: #675df3;
@@ -67,22 +67,24 @@ img{
     border: 3px solid blue;
     color: #50cea4;
     font-weight: bolder;
-    
-}
-pre{
-    color: #50cea4;
-}
-pre:hover{
     cursor: pointer;
+    
 }
 .arrow{
     height: 3vh;
     display: flex;
     justify-content: center;
+    gap: 1.5em;
 }
 .arro{
-    width: 2em;
+    width: 0.7em;
+    height: 1.2em;
     font-size: 1.8em;
     border: none;
     background-color: transparent;
+    text-align: center;
+}
+.arro:hover{
+    cursor: pointer;
+    border: 2px solid black;
 }

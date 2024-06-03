@@ -9,15 +9,15 @@ const data = [
         "content" : "I'am baby meggings health goth +1, Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humlebrag pickled coloring book salvia hoodle, cold-pressed four doliar toast everyday carry."
     },
     {
-        "image" : "./pinki.jpeg" ,
+        "image" : "./rinki.jpeg" ,
         "name" : "Rinki",
         "professtion" : "FULL STACK DEVELOPER",
         "content" : "I'am baby meggings health goth +1, Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humlebrag pickled coloring book salvia hoodle, cold-pressed four doliar toast everyday carry."
     },
     {
-        "image" : "./pinki.jpeg" ,
+        "image" : "./family.jpeg" ,
         "name" : "Kiran",
-        "professtion" : "FRONT END DEVELOPER",
+        "professtion" : "MAERN END DEVELOPER",
         "content" : "I'am baby meggings health goth +1, Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humlebrag pickled coloring book salvia hoodle, cold-pressed four doliar toast everyday carry."
     }
 ];
@@ -50,18 +50,15 @@ let arros = document.querySelectorAll('.arro');
 arros.forEach(arro => {
     arro.addEventListener('click',()=>{
         if(arro.id === 'back-arro'){
-            if(index === 0){
-                index=data.length;
+            if(index===0){
+                index = data.length
             }
-            index--;
+            --index;
         }
         else{
-            if(index === arro.length-1){
-                index = -1;
-            }
-            index++;
-            console.log(index)
+            index = (++index)%3
         }
+         
         setData(index)
     })
 });
