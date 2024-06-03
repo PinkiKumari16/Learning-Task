@@ -1,26 +1,16 @@
-// import Data from './data.json';
-// console.log(Data)
-
-const data = [
-    {
-        "image" : "./pinki.jpeg" ,
-        "name" : "Pinki",
-        "professtion" : "FRONT END DEVELOPER",
-        "content" : "I'am baby meggings health goth +1, Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humlebrag pickled coloring book salvia hoodle, cold-pressed four doliar toast everyday carry."
-    },
-    {
-        "image" : "./rinki.jpeg" ,
-        "name" : "Rinki",
-        "professtion" : "FULL STACK DEVELOPER",
-        "content" : "I'am baby meggings health goth +1, Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humlebrag pickled coloring book salvia hoodle, cold-pressed four doliar toast everyday carry."
-    },
-    {
-        "image" : "./family.jpeg" ,
-        "name" : "Kiran",
-        "professtion" : "MAERN END DEVELOPER",
-        "content" : "I'am baby meggings health goth +1, Bicycle rights tumeric chartreuse before they sold out chambray pop-up. Shaman humlebrag pickled coloring book salvia hoodle, cold-pressed four doliar toast everyday carry."
-    }
-];
+var data = [];
+let fetchData = () =>{
+    return fetch('./data.json')
+    .then((res)=>{
+        if(res.status !== 200){
+            throw new Error('data not found');
+        }
+        return res.json()
+    })
+}
+fetchData()
+.then((data1)=>data = data1)
+.catch(err=>console.log(err))
 
 let index = 0;
 let image = document.querySelector('img');
@@ -62,3 +52,4 @@ arros.forEach(arro => {
         setData(index)
     })
 });
+
