@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.header{
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+
+}
+
+.icons{
+    display: flex;
+    gap: 0.3em;
+}
+.icon{
+    height: 3vh;
+    width: 3wh;
+    border-radius: 50%;
+    margin: 8px 0 5px 2px;
+}
+.image{
+    height: 3.5vh;
+    width: 2.5wh;
+    border-radius: 50%;
+    object-fit: fill;
+    border: 2px solid #e68b8b;
+
+}
+#SideIcon{
+    display: none;
+    height: 5vh;
+}
+.side-icon{
+    height: 4vh;
+    transition: transform 0.10s ease;
+    width: 4vw;
+}
+.rotate-90{
+    transform: rotate(90deg);
+}
+
+.pages{
+    list-style: none;
+}
+
+.pages li { 
+    display: inline; 
+    padding: 20px; 
+    font-size: 1.7rem;
+}
+
+@media only screen and (max-width: 900px) {
+    .pages{
+        display: none;
+    }
+    .icons{
+        display:  none;
+    }
+    #SideIcon{
+        display: flex;
+    }
+
+}
