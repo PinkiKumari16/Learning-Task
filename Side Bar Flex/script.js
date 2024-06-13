@@ -17,5 +17,10 @@ let changeSideBar = () =>{
 
 let animationOnCross = ()=>{
     cross_icon.classList.toggle('rotate-360')
-    changeSideBar()
+    setTimeout(()=>{
+        changeSideBar()
+    }, 1000)
+
+    
 }
+
