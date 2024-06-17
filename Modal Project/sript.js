@@ -11,15 +11,10 @@ let overLapDiv = document.querySelector('.transparent-background');
 let handleModalProject = ()=>{
     isShowModal = !isShowModal;
     if(isShowModal){
-        firstBox.style.zIndex = '1';
-        overLapDiv.style.display = 'block';
-        overLapDiv.style.opacity = '0.6';
-        secondBox.style.display = 'grid';
-        // secondBox.style.zIndex = '2';
+        overLapDiv.style.display = 'grid';
 
     }
     else{
-        secondBox.style.display= 'none';
         overLapDiv.style.display = 'none';
     } 
 }

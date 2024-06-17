@@ -23,7 +23,6 @@ body{
     display: grid;
     gap: 1em;
     font-size: 2em;
-    /* z-index: 2; */
 }
 .btn{
     width: 7vw;
@@ -40,19 +39,18 @@ body{
     background-color: #fff;
 }
 .after-show-box{
-    position:absolute;
-    margin: 17% 0 0 35%;  
+    position: absolute;
+    top: 36%;
+    left: 35%; 
     height: 18vh;
     background-color: #fff;
     width: 33.4%;
-    display: none;
+    display: grid;
     justify-content: center;
     justify-items: center;
     padding: 0;
-    /* margin: 15% 0 0 35%; */
     box-shadow: rgb(155, 150, 150) 1px 1px 4px 1px;
     border-radius:0.4em;
-    /* z-index: 1; */
 }
 .modal{
     position: absolute;
@@ -75,10 +73,8 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #bee6f7;
-    /* z-index: 3; */
-    opacity: 0.4;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(190, 230, 247, 0.4);
     display: none;
 }
