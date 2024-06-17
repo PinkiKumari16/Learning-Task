@@ -2,25 +2,24 @@ let isShowModal = false;
 let btn = document.querySelector('.btn');
 let firstBox = document.querySelector('.center-box');
 let secondBox = document.querySelector('.after-show-box');
-let body = document.querySelector('body')
-let crossBtn = document.querySelector('.cross-icon');
+let modalContent = document.querySelector('.modal-content');
+let overLapDiv = document.querySelector('.transparent-background');
+
+
 
 
 let handleModalProject = ()=>{
     isShowModal = !isShowModal;
     if(isShowModal){
-        secondBox.style.display = 'grid'
-        body.style.backgroundColor = '#cef5ff'
-        // body.style.opacity = '0';
-        firstBox.style.opacity = '60%'
-        // secondBox.style.opacity = '70%';
-        // secondBox.classList.add('after-show-box')
-        // firstBox.classList.remove('center-box');
+        firstBox.style.zIndex = '1';
+        overLapDiv.style.display = 'block';
+        overLapDiv.style.opacity = '0.6';
+        secondBox.style.display = 'grid';
+        // secondBox.style.zIndex = '2';
+
     }
     else{
         secondBox.style.display= 'none';
-        // body.style.backgroundColor = '#fff';
-        firstBox.style.opacity='100%';
-        // secondBox.classList.remove('after-show-box')
+        overLapDiv.style.display = 'none';
     } 
 }

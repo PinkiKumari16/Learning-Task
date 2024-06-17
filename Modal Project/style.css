@@ -9,6 +9,7 @@ body{
     background-image: url('./image/background-image.png');
     background-repeat: no-repeat;
     background-size: cover;
+    height: 100vh;
 }
 .center-box{
     position: absolute;
@@ -22,6 +23,7 @@ body{
     display: grid;
     gap: 1em;
     font-size: 2em;
+    /* z-index: 2; */
 }
 .btn{
     width: 7vw;
@@ -50,7 +52,7 @@ body{
     /* margin: 15% 0 0 35%; */
     box-shadow: rgb(155, 150, 150) 1px 1px 4px 1px;
     border-radius:0.4em;
-
+    /* z-index: 1; */
 }
 .modal{
     position: absolute;
@@ -62,10 +64,21 @@ body{
     height: 1em;
     font-size: 2em;
     font-weight: bolder;
-    color: #6b0c0c;
+    color: #960a0a;
     margin-left: 19em;
     border: none;
     outline: none;
     background-color: transparent;
     
+}
+.transparent-background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #bee6f7;
+    /* z-index: 3; */
+    opacity: 0.4;
+    display: none;
 }
