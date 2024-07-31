@@ -6,12 +6,14 @@
     <title>New HTML tags</title>
 </head>
 <body>
-    <form action="/upload" method="post" enctype="multipart/form-data" style="text-align: center;">
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <h1>Form</h1>
         <label for="username">Username:</label>
-        <input type="text" name="name" id="name"><br>
+        <input type="text" name="name" id="name"><br><br>
 
         <label for="file">Upload the File</label>
-        <input type="file" id="file" name="file"><br>
+        <input type="file" id="file" name="file"><br><br>
+
         <label>Select the fruit: </label>
         <select name="select" id="1">
             <option>--</option>
@@ -20,16 +22,34 @@
             <option value="papaya">papaya</option>
             <option value="mango">mango</option>
         </select>
-        <br>
+        <br><br>
+
         <label for="fruit">enter the favrote fruit: </label>
         <input type="text" list="fruits">
-        <datalist id="fruits">
-            <option value="apple" />
-            <option value="banana" />
-        </datalist>
+        <br><br>
+
+        <label for="date">Select Date: </label><input type="date" id="date"><br><br>
+
+        <label>Selecct the Color: </label><input type="color"><br><br>
+        <label for="male">Male</label><input type="radio" name="gender" value="male" id="male">
+        <label for="female">Female</label><input type="radio" name="gender" value="female" id="female">
+        <label for="other">Others</label><input type="radio" name="gender" value="other" id="other"> 
+        <br><br>
+        <label>Known Languages</label><br>
+        <label>Javascript</label><input type="checkbox" value="Javascript"><br>
+        <label>Python</label><input type="checkbox" value="Python"><br>
+        <label>React</label><input type="checkbox" value="React">
         
+        <br><br>
         <button type="submit" value="submit">Submit</button>
+        <br><br>
     </form>
+
+
+    <datalist id="fruits">
+        <option value="apple" />
+        <option value="banana" />
+    </datalist>
 
     <!-- for giving the multiple spaces in the web browser -->
     &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
@@ -53,6 +73,10 @@
     <map name="workspace">
         <area shape="rect" coords="39, 44, 270, 350" href="xyz.html" alt="shap">
     </map>
+    <hr>
+    <iframe width="700" height="400" src="https://www.youtube.com/embed/1SVch5cdyEE?si=bUeSPC6ZPEBezV5a" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <hr>
+    <iframe src="https://en.wikipedia.org/wiki/Main_Page" height="400" width="700"></iframe>
 
 
 </body>
