@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New HTML tags</title>
+</head>
+<body>
+    <form action="/upload" method="post" enctype="multipart/form-data" style="text-align: center;">
+        <label for="username">Username:</label>
+        <input type="text" name="name" id="name"><br>
+
+        <label for="file">Upload the File</label>
+        <input type="file" id="file" name="file"><br>
+        <label>Select the fruit: </label>
+        <select name="select" id="1">
+            <option>--</option>
+            <option value="apple">apple</option>
+            <option value="banana">banana</option>
+            <option value="papaya">papaya</option>
+            <option value="mango">mango</option>
+        </select>
+        <br>
+        <label for="fruit">enter the favrote fruit: </label>
+        <input type="text" list="fruits">
+        <datalist id="fruits">
+            <option value="apple" />
+            <option value="banana" />
+        </datalist>
+        
+        <button type="submit" value="submit">Submit</button>
+    </form>
+
+    <!-- for giving the multiple spaces in the web browser -->
+    &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+    <video src="../assets/bg-video.webm" 
+        loop
+        autoplay
+        controls
+        muted
+        height="300px"
+    ></video>
+    <hr>
+    <figure>
+        <img src="../assets/cat.webp"/>
+        <figcaption>This is the cat image</figcaption>
+    </figure>
+    <hr>
+
+    <hr>
+
+    <img src="../assets/cat.webp" alt="cat image" usemap="#workspace" />
+    <map name="workspace">
+        <area shape="rect" coords="39, 44, 270, 350" href="xyz.html" alt="shap">
+    </map>
+
+
+</body>
+</html>

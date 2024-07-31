@@ -1,0 +1,14 @@
+div{
+    /* background-color: red; */
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+.box{
+    height: 15vh;
+    width: 10vw;
+    background-color: pink;
+    padding: 1rem;
+    justify-content: center;
+    border: 2px solid green;
+}
