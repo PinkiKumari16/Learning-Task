@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-size: 30px;
+    /* font-family: "Playwrite AT", cursive; */
+}
+nav{
+    padding: 5px;
+}
+nav a{
+    text-decoration: none;
+    margin-left: 55px;
+    padding: 5px;
+}
+header{
+    background-color: rgb(145, 247, 213);
+    height: 50px;
+}
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: rgb(77, 224, 19);
+    border-radius: 50%;
+}
+.contener{
+    margin: 5px;
+    border: 2px solid;
+    padding: 5px;
+}
+.div{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background-color: rebeccapurple;
+    border: 15px solid;
+}
+.sidebar{
+    position: fixed;
+    top: 50px;
+    right: 1px;
+    height: 100vh;
+    width: 15vw;
+    background-color: rgb(171, 171, 201);
+    border: 2px dotted red;
+
+
+}
+.progress-box{
+    height: 30px;
+    background-color: rgb(202, 189, 202);
+    width: 50%;
+    border-radius: 20px;
+}
+.progress{
+    height: 100%;
+    background-color: rgb(5, 173, 81);
+    /* width: 20%; */
+    border-radius: 20px;
+    animation: increase 2s;
+}
+
+@keyframes increase {
+    0%{width: 0%;}
+    90%{width: 95%;}
+    95%{width: 70%;}
+    to{width: 100%;}
+}
+#d1{
+    background-color: red;
+    box-sizing: border-box;
+    
+}
+#d2{
+    background-color: aqua;
+    box-sizing: content-box;
+}

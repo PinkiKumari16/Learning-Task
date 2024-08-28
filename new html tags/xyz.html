@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>table page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AT:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
     <style>
         table, tr, th, td{
             border: 2px solid rgb(6, 253, 158);
+        }
+    
+        .tooltip {
+            position: relative;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 5px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%; /* Position the tooltip above the text */
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .tooltip:hover .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        
+
+        .para{
+            font-family: "Playwrite AT", cursive;
+        /* font-optical-sizing: auto; */
         }
 
     </style>
@@ -43,5 +80,62 @@
     <hr>
     <label for="file-prosess">File Upload Progress:</label>
     <progress id="file-prosess" value="60" max="100"></progress>
+    <hr>
+    <div itemscope itemtype="http://schema.org/SoftwareApplication">
+        <span itemprop="name">Interviewbit Games</span> 
+        REQUIRES: <span itemprop="operatingSystem">ANDROID</span><br>
+        <link itemprop="applicationCategory" href="http://schema.org/GameApp
+        <div itemprop="aggregateRating" itemscope itemtype="http://schema.or
+        RATING:
+        <span itemprop="ratingValue">4.6</span> (
+        <span itemprop="ratingCount">8864</span> ratings )
+        </div>
+        <div itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+        Price: Rs.<span itemprop="price">1.00</span>
+        <meta itemprop="priceCurrency" content="INR" />
+        </div>
+    </div>
+    <hr>
+    <form oninput="result.value=parseInt(n1.value)+parseInt(n2.value)">
+        <input type="number" name="n1" value="1"> + 
+        <input type="number" name="n2" value="2"><br>
+        The Output is: <output name="result"></output>
+
+    </form>
+    <hr>
+    
+    <canvas width="300" height="100" style="border:2px solid;"></canvas>
+    <hr>
+    <svg width="400" height="110">
+        <rect width="300" height="100" style="fill:#FFF;stroke-width:2;">
+    </svg>
+    <p>Click "try it" button to get your coordinates.</p>
+    <button onclick="getLocation()">Try it</button>
+    <p id="demo"></p>
+
+    <hr>
+    <h2>Custom Tooltip Example</h2>
+    <div class="tooltip">Hover over me
+        <span class="tooltiptext">Custom Tooltip Text</span>
+    </div>
+    <hr>
+    <div style="height: 100px; background-color: rgba(127, 255, 212,0.6);">hii
+        <h1 style="z-index: 1;">I am pinki</h1>
+        <p class="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi exercitationem incidunt quo velit a saepe harum minus labore numquam id. ipsum dolor sit amet consectetur adipisicing elit. Quod aliquid soluta ab. Voluptatem, explicabo quia, sed tenetur non nemo debitis esse, nulla illum commodi distinctio? Molestiae recusandae iste adipisci et.</p>
+    </div>
+        
 </body>
+<script>
+    var x = document.getElementById('demo');
+    function getLocation(){
+        if(navigator.geolocation){
+            navigator.geolocation.getCurrentPosition(showPosition);
+        }else{
+            x.innerHTML = "geolocation functionality is not supported"
+        }
+    }
+    function showPosition(position){
+        x.innerHTML = "Latitude: " + position.coords.latitude + "<br> Longitude: " + position.coords.longitude;
+    }
+</script>
 </html>

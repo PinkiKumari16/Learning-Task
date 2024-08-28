@@ -68,5 +68,24 @@ img{
     font-size: 0.85rem;
     padding-bottom: 0;
 }
+.popup{
+    position: absolute;
+    top: 13%;
+    left: 42%;
+    display: flex;
+    padding-right: 25px ;
+    background-color: transparent;
+    background-color: #fff;
+    line-height: 30px;
+    box-shadow: gray 0 0 10px;
+    visibility: hidden;
+}
+button:hover + .popup{
+    visibility: visible;
+}
+
+button:hover{
+    font-weight: bold;
+}
 
   
